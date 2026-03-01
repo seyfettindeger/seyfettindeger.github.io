@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: #4c4d4e;
+    padding: 10px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Dikey hizalama eklendi */
+    justify-content: center; /* Yatayda ortalamayı sağlar */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container-bb {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.portrait {
+    width: 150px; /* Ayarlamak istediğiniz genişlik */
+    height: auto;
+    margin-right: 20px; /* Yazılar ile arasındaki boşluk eklenmiş */
+}
+
+.container-card {
+    display: flex;
+    align-items: center; /* Dikey hizalama eklendi */
+    justify-content: center; /* Yatayda ortalamayı sağlar */
+    flex-wrap: wrap; /* Kartların alt alta sıralanması için gerekli */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px; /* Kart genişliği */
+    height: 300px; /* Kart yüksekliği - ihtiyaca göre ayarlayabilirsiniz */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    flex-grow: 1; /* Resmin kart içindeki yerini ayarlar */
+}
+
+.card h4 {
+    margin: 5px 0;
+}
+
+.card button {
+    background-color: #f4eded;
+    color: #333;
+    padding: 8px 12px;
+    border:none;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #f8f7f7;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+.formBtn {
+    background-color: #10334a;
+    color: #ecf0f1;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.formBtn:hover {
+    background-color: #2980b9;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ecf0f1;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 2px;
+    margin-top: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+}
